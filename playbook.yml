@@ -1,0 +1,9 @@
+---
+ - hosts: wordpress
+   remote_user: analista
+   become: yes
+   roles:
+   - server
+   - php
+   - mysql
+   - wordpress
